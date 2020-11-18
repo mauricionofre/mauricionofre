@@ -1,0 +1,17 @@
+.wrapper{
+    position: relative;
+    top: 0;
+    height: 100vh;
+
+    &.wrapper-full-page{
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.main-panel {
+    > .content {
+      padding: 0px 0px 0px 200px;
+      min-height: calc(100vh - 70px);
+    }
+}

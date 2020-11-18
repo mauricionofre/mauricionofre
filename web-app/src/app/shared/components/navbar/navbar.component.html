@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="d-flex flex-grow-1">
+      <span class="w-100 d-lg-none d-block"></span>
+      <a class="navbar-brand" href="#">
+        Logomarca
+      </a>
+      <div class="w-100 text-right">
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse text-right" id="navbarToggler" [collapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto flex-nowrap">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <span dropdown>
+            <a href class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">
+              <div class="photo">
+                <img alt="Profile Photo" src="assets/img/anime3.png" />
+              </div>
+              <b class=" caret d-none d-lg-block d-xl-block"> </b>
+              <p class=" d-lg-none">Log out</p>
+            </a>
+            <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="basic-link">
+              <li *ngFor="let choice of items">
+                <a class="dropdown-item" href="#">{{choice}}</a>
+              </li>
+            </ul>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>

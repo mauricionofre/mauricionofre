@@ -1,0 +1,19 @@
+$teal:                          #1abc9c;
+$dark-blue:                     #2c3e50;
+$white:                         #ffffff;
+
+// Override Bootstrap primary and secondary colors
+$primary:                       $teal;
+$secondary:                     $dark-blue;
+$light:                         $white;
+
+$navbar-color:                  $teal;
+$padding-base-vertical:         .5rem;
+
+$font-size-dash:                .875rem;
+
+$font-size-base:                $font-size-dash; // Assumes the browser default, typically `16px`
+$font-size-xl:                  ($font-size-base * 1.428);
+$font-size-lg:                  ($font-size-base * 1.142);
+$font-size-sm:                  ($font-size-base * .85714286);
+$font-size-xs:                  ($font-size-base * .714);

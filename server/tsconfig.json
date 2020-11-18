@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "lib": [
+        "es2017",
+        "esnext.asynciterable"
+      ],
+      "typeRoots": [
+        "./node_modules/@types",
+        "./src/types"
+      ],
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "module": "commonjs",
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "outDir": "dist",
+      "sourceMap": true,
+      "strict": true,
+      "target": "es2017"
+    },
+    "compileOnSave": true,
+    "include": [
+      "./src/**/*"    
+    ]
+  }
+  

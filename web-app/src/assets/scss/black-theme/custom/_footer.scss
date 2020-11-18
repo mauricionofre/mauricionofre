@@ -1,0 +1,15 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px; /* Vertically center the text there */
+    background-color: $secondary;
+    color: $light;
+    text-align: center;
+
+    &span{
+        font-size: $font-size-sm;
+        line-height: 1.8;
+        text-align: center;
+    }
+}
